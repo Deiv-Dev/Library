@@ -8,7 +8,7 @@ public class Admin {
     Connection c;
     String URL = "jdbc:mysql://localhost/books_library";
     String user = "root";
-    String password = "root";
+    String password = "";
 
     boolean adminRegister() {
         try {
