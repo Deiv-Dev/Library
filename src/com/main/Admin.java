@@ -10,7 +10,7 @@ public class Admin {
     String user = "root";
     String password = "";
 
-    boolean adminRegister() {
+    public boolean adminRegister() {
         try {
             Class.forName("com.mysql.cj.jdbc.Driver");
             c = DriverManager.getConnection(URL, user, password);
