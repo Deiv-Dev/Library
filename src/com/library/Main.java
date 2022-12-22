@@ -1,4 +1,4 @@
-package com.library;
+package com.library.controllers;
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
@@ -11,7 +11,7 @@ public class Main extends Application{
     // Loads Main.fxml stage
     @Override
     public void start(Stage primaryStage) throws Exception{
-        Parent root = FXMLLoader.load(getClass().getResource("resources/Main.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("resources/views/Main.fxml"));
         primaryStage.setTitle("Biblioteka");
         primaryStage.setScene(new Scene(root));
         primaryStage.show();

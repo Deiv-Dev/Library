@@ -1,7 +1,7 @@
 package com.library;
 
-import com.library.admin.AdminController;
-import com.library.user.UserController;
+import com.library.controllers.admin.AdminLoginController;
+import com.library.controllers.user.UserController;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -24,7 +24,7 @@ public class MainController {
         Scene scene = new Scene(fxmlLoader.load());
 
         // Get next controller to remember where to go back
-        AdminController controller = fxmlLoader.getController();
+        AdminLoginController controller = fxmlLoader.getController();
         controller.setPreScene(admin.getScene());
 
         // Set and show scene on button press

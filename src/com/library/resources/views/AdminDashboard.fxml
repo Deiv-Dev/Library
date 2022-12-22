@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.library.controllers.admin.AdminController">
+    <children>
+        <Pane layoutX="-3.0" layoutY="-1.0" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: blue;" AnchorPane.bottomAnchor="1.0" AnchorPane.leftAnchor="-3.0" AnchorPane.rightAnchor="-4.0" AnchorPane.topAnchor="-1.0">
+            <children>
+                <Pane layoutX="19.0" layoutY="14.0" prefHeight="372.0" prefWidth="570.0" style="-fx-background-color: grey;">
+                    <children>
+                        <Pane layoutY="92.0" prefHeight="280.0" prefWidth="570.0" style="-fx-background-color: white;">
+                     <children>
+                        <TableView prefHeight="280.0" prefWidth="570.0">
+                          <columns>
+                            <TableColumn fx:id="titleColumn" prefWidth="127.0" text="Title" />
+                            <TableColumn fx:id="yearColumn" prefWidth="74.0" text="Year" />
+                              <TableColumn fx:id="authorColumn" prefWidth="128.0" text="Author" />
+                              <TableColumn fx:id="summaryColumn" prefWidth="240.0" text="Summary" />
+                          </columns>
+                        </TableView>
+                     </children></Pane>
+                        <Button fx:id="back" layoutX="14.0" layoutY="15.0" mnemonicParsing="false" onAction="#logaut" text="Logaut" />
+                        <Text layoutX="224.0" layoutY="60.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Books list">
+                            <font>
+                                <Font size="29.0" />
+                            </font>
+                        </Text>
+                    </children>
+                </Pane>
+            </children>
+        </Pane>
+    </children>
+</AnchorPane>
